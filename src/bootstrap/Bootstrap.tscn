@@ -27,38 +27,55 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -360.0
-offset_top = -90.0
-offset_right = 360.0
-offset_bottom = 90.0
+offset_left = -430.0
+offset_top = -220.0
+offset_right = 430.0
+offset_bottom = 220.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 14
+theme_override_constants/separation = 18
 
 [node name="Title" type="Label" parent="Layout"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.914, 0.886, 0.816, 1)
-theme_override_font_sizes/font_size = 42
-text = "RÉQUIEM: ECOS DO SILÊNCIO"
+theme_override_font_sizes/font_size = 34
+text = "NOAH // PULSE PROTOTYPE"
+horizontal_alignment = 1
+
+[node name="Tempo" type="Label" parent="Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.60, 0.66, 1)
+theme_override_font_sizes/font_size = 14
+text = "120 BPM  •  SPACE ON THE PULSE"
 horizontal_alignment = 1
 
 [node name="Pulse" type="Label" parent="Layout"]
+custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.329, 0.78, 0.808, 1)
-theme_override_font_sizes/font_size = 28
-text = "—  ◇  —"
+theme_override_font_sizes/font_size = 96
+text = "◇"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Feedback" type="Label" parent="Layout"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.60, 0.66, 1)
+theme_override_font_sizes/font_size = 24
+text = "LISTEN. FEEL. HIT."
 horizontal_alignment = 1
 
-[node name="Tagline" type="Label" parent="Layout"]
+[node name="Stats" type="Label" parent="Layout"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.62, 0.09, 0.22, 1)
-theme_override_font_sizes/font_size = 20
-text = "Every death rewrites the music."
+theme_override_colors/font_color = Color(0.77, 0.64, 0.35, 1)
+theme_override_font_sizes/font_size = 14
+text = "Perfect 0   Good 0   Free 0   Combo 0   Best 0   Accuracy 0%"
 horizontal_alignment = 1
 
-[node name="Status" type="Label" parent="Layout"]
+[node name="Hint" type="Label" parent="Layout"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.769, 0.639, 0.353, 1)
-theme_override_font_sizes/font_size = 13
-text = "INITIALIZING"
+theme_override_colors/font_color = Color(0.44, 0.46, 0.52, 1)
+theme_override_font_sizes/font_size = 12
+text = "Use the indicator to learn the interval. Then try playing without watching it."
 horizontal_alignment = 1
