@@ -1,66 +1,45 @@
-# RÉQUIEM: ECOS DO SILÊNCIO
+# ECOS DO TEMPO
 
-> **Every death rewrites the music.**
+> **Echoes of Time.**
 
-Réquiem é um action roguelite 2D em pré-produção. A ideia é combinar combate rápido, uma camada leve de ritmo e cartas de ação sem transformar o jogo num rhythm game tradicional.
+**Ecos do Tempo** é um projeto autoral 2D em pré-produção e meu primeiro jogo pensado desde o início para ter um escopo pequeno e realmente terminável.
 
-Nox acorda em Vesper sem lembrar o que aconteceu com o Coração do Mundo. O cenário, os inimigos e pequenas memórias espalhadas pelo caminho contam a maior parte da história; o protagonista não precisa explicar tudo em diálogos.
+A prioridade não é construir uma história enorme, dezenas de sistemas ou uma experiência longa. O objetivo é fechar uma experiência curta, jogável e com identidade própria, aprendendo o ciclo completo de desenvolvimento de um jogo.
 
-## A ideia do combate
+## Direção
 
-O jogador se move e ataca em tempo real. O **Pulso** marca o ritmo da música, mas errar esse timing nunca bloqueia uma ação.
+Noah é o personagem central do projeto. A narrativa pode existir de forma ambiental — cenário, som, pequenas pistas e acontecimentos — sem depender de diálogos constantes ou exposição direta.
 
-Acertar perto do Pulso melhora a execução e aumenta a **Cadência**:
-
-```text
-D → C → B → A → S → RÉQUIEM
-```
-
-As cartas representam ações — ataques, movimento ou impacto — e não uma pilha de buffs passivos. Quero que a mão mude as decisões do combate sem parar o jogo a cada poucos segundos.
-
-## Direção atual
-
-O primeiro recorte do jogo está sendo pensado em torno de:
+A direção atual prioriza:
 
 - um único personagem jogável;
-- exploração mais solitária;
-- uma região principal, a **Catedral Afogada**;
-- combate em tempo real com cartas;
-- Pulso/Cadência como camada de domínio;
-- poucos inimigos bem legíveis;
-- segredos e narrativa ambiental;
-- pixel art moderna com efeitos usados com moderação.
+- uma experiência curta e fechada;
+- exploração e atmosfera;
+- poucos sistemas, mas bem finalizados;
+- narrativa ambiental opcional;
+- identidade visual consistente;
+- um protótipo jogável antes de qualquer expansão de escopo.
 
-A prioridade é fechar um protótipo de combate pequeno antes de produzir salas, inimigos e arte em quantidade.
+## Filosofia do projeto
 
-## Nox
+Este projeto é deliberadamente pequeno.
 
-Nox é o protagonista e permanece em silêncio durante boa parte da experiência.
-
-A identidade visual planejada usa uma silhueta pequena, roupa escura, um detalhe carmesim, um pequeno sino envelhecido e efeitos azul-espectrais. O ambiente deve chamar mais atenção pelo tamanho e atmosfera do que o personagem por complexidade visual.
+Antes de adicionar mapas, inimigos, sistemas ou história, a meta é provar o núcleo do jogo e chegar a um começo, meio e fim jogáveis. Se uma mecânica não contribuir para esse primeiro lançamento, ela pode ficar para depois.
 
 ## Tecnologia
 
 - Godot 4.x com suporte .NET;
 - C# / .NET;
-- Windows como primeiro alvo.
-
-O repositório também tem alguns experimentos de telemetria local e orçamento de frame para ajudar no ajuste do jogo. Eles são ferramentas de desenvolvimento, não funcionalidades para o jogador.
+- Windows como primeiro alvo;
+- Git / GitHub para versionamento.
 
 ## Estrutura
 
 ```text
 src/       código do jogo e protótipos
-docs/      história, combate, arte e decisões de design
+docs/      game design, narrativa e direção visual
 assets/    recursos do projeto
-tools/     utilitários de desenvolvimento
 ```
-
-As anotações que mais ajudam a entender a direção atual estão em:
-
-- [`docs/GAME_DESIGN.md`](docs/GAME_DESIGN.md)
-- [`docs/STORY.md`](docs/STORY.md)
-- [`docs/ART_BIBLE.md`](docs/ART_BIBLE.md)
 
 ## Rodando localmente
 
@@ -73,7 +52,7 @@ As anotações que mais ajudam a entender a direção atual estão em:
 
 **Pré-produção.**
 
-Existe uma branch separada onde estou testando o primeiro combat toy. Ela só deve virar a base principal depois de eu confirmar o build no Godot e jogar o protótipo de verdade. Até lá, a `main` representa a direção do projeto, não uma promessa de vertical slice pronta.
+O foco atual é chegar ao primeiro protótipo jogável e descobrir o que **Ecos do Tempo** realmente precisa ser antes de aumentar o escopo.
 
 ## Licença
 
